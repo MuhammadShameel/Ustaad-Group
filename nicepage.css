@@ -43684,3 +43684,32 @@ a.u-link.u-text-hover-grey-90:hover {
  /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/
+
+
+ 
+@media (min-width: 769px) {
+  .d-lg-screen {
+    display: block;
+  }
+}
+
+/* Hide the div on screens 769px and smaller */
+@media (max-width: 768px) {
+  .d-lg-screen {
+    display: none;
+  }
+}
+
+/* Show another div on screens 768px and smaller */
+@media (max-width: 768px) {
+  .d-sm-screen {
+    display: block;
+  }
+}
+
+/* Hide the other div on screens larger than 769px */
+@media (min-width: 769px) {
+  .d-sm-screen {
+    display: none;
+  }
+}
